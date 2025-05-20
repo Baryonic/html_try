@@ -1,0 +1,764 @@
+/*
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+COMPARTIDO (header, nav, section1, footer)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+*/
+/*
+ANIMACIONES
+*/
+/*
+animaciones que cambian el color de fondo
+*/
+@keyframes colorDeFondo {
+    0% {
+        background-color: #EEF3FF;
+    }
+        100% {
+        background-color: #B3EEFF;
+    }
+}
+@keyframes colorDeFondo02 {
+    0% {
+        background-color: #B3EEFF;
+    }
+        100% {
+        background-color: #c9EEFF;
+
+    }
+}
+@keyframes colorDeFondo03 {
+    0% {
+        background-color: #B3EEFF;
+    }
+        100% {
+        background-color: #5891a1;
+    }
+}
+@keyframes colorDeFondo04 {
+    10% {
+        background-color: #EEF3FF;
+    }
+        100% {
+        background-color: #B3EEFF;
+        
+    }
+}
+@keyframes colorDeFondo05 {
+
+    10% {
+        background-color: #c5f3ff;
+    }
+    20%{
+        background-color: #B3EEFF;
+    }
+        100% {
+        background-color: #EEF3FF;
+    }
+}
+@keyframes colorDeFondo06 {
+
+    5% {
+        background-color: #c9EEFF;
+    }
+    35%{
+        background-color: #B3EEFF;
+    }
+        100% {
+        background-color: #EEF3FF;
+    }
+}
+@keyframes colorDeFondo08 {
+    50%{
+        background-color: #EEF3FF;
+    }
+}
+/*
+animaciones que cambian el color de fondo y el borde o solo el borde
+*/
+@keyframes colorDeFondo07 {
+    0% {
+        background-color: #B3EEFF;
+        border: 1px dotted #EEeeee;
+    }
+        100% {
+        background-color: #c9EEFF;
+        border: 1px dotted #B7f2FF;
+
+    }
+}
+@keyframes colorDeBorde{
+    0%{
+        border: 1px dotted #B3EEFF;
+    }
+    50%{
+        border: 1px dotted #B3EEFF;
+    }
+    100%{
+        border: 1px dotted #5891a1;
+    }
+}
+@keyframes colorDeBorde02{
+    0%{
+        border: 1px solid #B3EEFF;
+    }
+    50%{
+        border: 1px solid #EEeeee;
+    }
+    100%{
+        border: 1px solid #B3EEFF;
+    }
+}
+/*
+animaciones que cambian el color de fondo, el borde y el color de la fuente
+*/
+@keyframes colorDeFuente{
+    0%{
+        border: 1px solid #B3EEFF;
+    }
+    100%{
+        background-color: #B3EEFF;
+        color: #0D045A;
+        border: 1px solid #EEeeee;
+    }
+}
+@keyframes colorDeFuente02{
+    10%{
+        background-color: #EEF3FF;
+    }
+    100%{
+        background-color:#c9EEFF ;
+        color: #000000;
+    }
+}
+/*enlaces */
+a{
+    color: #515557;
+    font-weight: bold;
+}
+/*hover de los enlaces
+    color naranja
+*/
+a:hover{
+    color: #ffc488;
+}
+/*body:
+    crear una animacion para cambiar el color de fondo,infinite(ciclica) alternate (0%-100%-0%)
+    fuente en general de la pagina web
+*/
+body {
+    animation: colorDeFondo 16s infinite alternate;
+    font-family: sans-serif;
+}
+/*___________________________________________________________________
+tabla header:
+    color de fondo
+    anchura 100% para que ocupe siempre el ancho de la pagina
+    redondear las esquinas de la tabla
+    animacion de color de bordes ciclica alternada
+    magen abajo para separar el nav
+*/
+.menu_table_class{
+    background-color: #B3EEFF;
+    width: 100%; 
+    border-radius: 10px;
+    animation: colorDeBorde 16s infinite alternate;
+    margin-bottom: 5px;
+}
+/*cambia el color de fondo en funcion de la pagina en la que se encuentra*/
+.home .menu-home,
+.productos .menu-productos,
+.presupuestos .menu-presupuestos,
+.contacto .menu-contacto {
+    animation: colorDeFondo08 2s infinite alternate;
+}
+/*celdas de la tabla de menu (header)
+    recortar esquinas
+*/
+.menu_table_class tr td{
+    border-radius: 20px;
+}
+/*hover de las celdas
+    animacion lineal que dura 6 segundos, forwards (0%-100%)
+*/
+.menu_table_class tr td:hover{
+    animation: colorDeFondo02 6s forwards;
+}
+/*celdas de la tabla header:
+    anchura 25% porque hay 4 celdas
+    alinear los elementos al centro (tambien afecta a la imagen del logo)
+*/
+.menu_table_class tr td{
+    width: 25%;
+    text-align: center;
+}
+/*la imagen del logo:
+    tamanyo constante que fijara la altura de la tabla header
+    margin para alinear un poco con el autogenerado 
+    recortar las esquinas de la imagen
+*/
+#logo_img_id{
+    max-width: 140px;
+    border-radius: 10px;
+    text-align: center;
+}
+/*los enlaces de la tabla header:
+    quitar el subrayado
+    color de la fuente
+    tamanyo de la fuente
+*/
+.menu_a{
+    text-decoration: none;
+    color: #515557;
+    font-size: 26px;
+}
+/*hover de los enlaces de la tabla header:
+    color del hover naranja
+*/
+.menu_a:hover{
+    color: #ffc488;
+}
+/*________________________________________________________________________
+nav
+    color de fondo cyan
+    color fuente cyan oscuro
+    recortar esquinas
+    display flex para habilitar flexbox
+    margin 0 auto para centrar el nav
+    animacion del borde del nav ciclica
+    anchura maxima 800px
+    margin 5 px para separar el final del nav
+*/
+nav{
+    background-color: #B3EEFF;
+    color: #5891a1;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    animation: colorDeBorde 16s infinite alternate;
+    max-width: 800px;
+    margin-bottom: 5px;
+}
+/*hover del nav
+    animacion del color de fondo
+    animacion color de borde 1pixel blanco parpadeo
+    color de la fuente gris
+*/
+nav:hover{
+    animation: colorDeFondo02 4s forwards;
+    animation: colorDeBorde02 2s infinite alternate;
+    color: #515557;
+}
+/*titulos h1 dentro del nav
+    tamanyo fuente 25px
+    margen para seoarar el texto de la izquierda
+*/
+nav h1{
+    font-size: 25px;
+    margin-left: 10px; 
+}
+/*________________________________________________________________________
+Secciones
+    secciones separadas 10 pixeles arriba y abajo 
+*/
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*________________________________________________________________________
+Section 1
+    color de fondo cyan
+    recortar esquinas
+    pading y margin para separar de otras secciones y del margen de la propia
+    animacion del borde 
+    anchura maxima 800 pixeles
+    margin 0 auto para centrar la seccion
+*/
+.section1_class{
+    background-color: #B3EEFF;
+    border-radius: 10px;
+    padding-top:3px ;
+    margin-bottom: 3px;
+    animation: colorDeBorde 16s infinite alternate;
+    max-width: 800px;
+    margin:0 auto;
+}
+/*titulos h2 de la seccion 1: 
+    tamanyo fuente 20px
+    color de las letras gris
+    padding left para separar del borde izquierdo
+*/
+.section1_class h2{
+    font-size: 20px;
+    color: #515557;
+    padding-left: 15px;
+}
+/*tabla de la seccion: recortar esquinas
+*/
+.section1_class table{
+    border-radius: 10px;
+}
+/*celdas de la tabla de la seccion1: recortar esquinas
+*/
+.section1_class table td{
+    border-radius: 10px;
+}
+/*hover de la seccion 1: color de fondo lineal 7 segundos
+*/
+.section1_class:hover{
+    animation: colorDeFondo07 6s forwards;
+}
+/*________________________________________________________________________
+tabla footer:
+    color de fondo cyan
+    anchura 100%
+    recortar esquinas
+    animacion del color de los bordes
+    anchura maxima 800 pixeles
+    margin 5px auto para separar la seccion y centrarla
+*/
+#footer_table_id{
+    background-color: #B3EEFF;
+    width: 100%; 
+    border-radius: 10px;
+    animation: colorDeBorde 16s infinite alternate;
+    max-width: 800px;
+    margin:5px auto;
+}
+/*celdas de la tabla footer: 
+    padding para separar los elementos del borde
+    recortar las esquinas
+*/
+#footer_table_id tr td{
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+/*hover de las celdas de la tabla footer: 
+    animacion de color de fondo 6 segundos lineal
+*/
+#footer_table_id tr td:hover{
+    animation: colorDeFondo06 6s forwards;
+}
+/*hover de la tabla footer:
+    animacion de color de fondo
+    1 pixel de borde porque la animacion causaba un desnivel de 1 pixel al ya tener borde definido previamente
+*/
+#footer_table_id:hover{
+    animation: colorDeFondo02 6s forwards;
+    border: 1px solid #B3EEFF;   
+}
+/*imagenes de las redes sociales de la tabla footer:
+    anchura 50 pixeles
+    margen derecha 5% para separar las imagenes
+    transition filter duracion un segundo para hover
+*/
+.social_img_class_00{
+    width: 50px;
+    margin-right: 5%;
+    transition: filter 1s ease;    
+}
+/*hover de las imagenes: invertir colores
+*/
+.social_img_class_00:hover{
+    filter: invert(1);
+}
+/*parrafos dentro de las celdas de la tabla footer(direccion y aviso legal): 
+    tamnyo de fuente 17 pixeles
+*/
+#footer_table_id tr td p{
+    font-size: 17px;
+}
+/*
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+NO COMPARTIDO (index, productos, presupuestos, contacto)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+*/
+/*
+________________________________________________________________________
+________________________________________________________________________
+Index
+________________________________________________________________________
+________________________________________________________________________
+*/
+/*parrafos del nav: 
+    recortar esquinas
+    padding para separar de los bordes internos
+    margin para separar de los bordes externos
+*/
+nav p{
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*hover de los parrafos del nav: color de fondo 6 segundos lineal
+*/
+nav p:hover{
+    animation: colorDeFondo04 6s forwards;
+}
+/*tabla de la seccion 1 (clase)
+    recortar esquinas
+    anchura maxima 800 pixeles
+    margin 0 auto para centrar la tabla
+    animacion de color de borde ciclica
+*/
+.section1_table_class{
+    border-radius: 10px;
+    max-width: 800px;
+    margin:0 auto;
+    animation: colorDeBorde 16s infinite alternate;
+}
+/*hover de la tabla de la seccion 1: cambiar el color de la fuente
+*/
+.section1_table_class:hover{
+    animation: colorDeFuente 6s forwards;
+}
+/*celdas de tabla de la seccion 1: recortar esquinas
+*/
+.section1_table_class tr td{
+    border-radius: 10px
+}
+/*parrafos de lasceldas de la tabla de la seccion 1: 
+    margin left para separar de la izquierda
+    cambiar la familia de la fuente
+    padding para mas separacion
+*/
+.section1_table_class tr td p{
+    margin-left: 10px;
+    font-family: 'Lucida Handwriting',cursive;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+/*contenedor de la imagen del robot de la seccion 1
+    anchura 50% ocupara la mitad de la seccion
+*/
+#robot_img_container_id{
+    width: 50%;
+}
+/*la imagen del robot
+    anchura 100% ocupara toda la celda
+    transicion 0.5 segundos para suavidad
+*/
+#robot_01_img_id{
+    width: 100%;
+    transition: filter 0.5s ease;
+}
+/*hover de la imagen del robot: aumentar exposicion de la imagen
+*/
+#robot_01_img_id:hover{
+    filter: brightness(1.1);
+}
+/* titulos de las listas de la tabla de la seccion 1 (nuestros productos/servicios)
+    tamanyo de fuente 
+    familia de fuente
+*/
+.section1_table_class tr td ul h2{
+    font-size: 30px;
+    font-family: monospace;
+}
+/* elementos alistados en la lista de la tabla de la seccion 1
+    familia serif
+    tamanyo grande
+    padding derecha para separar de la imagen
+    padding abajo para separar del borde
+*/
+li{
+   font-family: serif;
+   font-size: large;
+   padding-right:20px;
+   padding-bottom: 5px;
+}
+/*hover de las celdas de la tabla de la seccion1: 
+    animaciomn de color de fondo 6 segundo lineal
+*/
+.section1_table_class tr td:hover{
+    animation: colorDeFuente02 6s forwards;
+}
+/*seccion2
+    recortar las esquinas
+    anchura maxima 800 pixeles
+    margin 0 auto para centrar los elementos de la seccion
+    animacion que cambia el color de fuente, el color de fondo y el de borde, ciclica 16 segundos
+*/
+#section2{
+    border-radius: 10px;
+    max-width: 800px; 
+    margin:0 auto;
+    animation: colorDeFuente 16s infinite alternate;
+}
+/*parrafos de la seccion 2: 
+    margen derecha e izquierda para separar de los bordes
+*/
+#section2 p{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+/*Noticias Section 3
+    recortar esquinas
+*/
+#section3_id{
+    border-radius: 10px;
+}
+/*imagen del robot de juguete de la seccion de noticias
+    anchura = altura = 40%
+    float left para que se pueda poner el texto al lado
+    margin right para separar del texto
+    transition de 10 segundos para suavizar la animacion del hover
+*/
+#toyrobot_img_id_01{
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-right: 7px;
+    transition: filter 10s ease;        
+}
+/*hover de la imagen: 
+    aumentar el contraste en un 500%
+*/
+#toyrobot_img_id_01:hover{
+    filter:contrast(5);
+}
+/*titulos h2 de la seccion de notias
+    centrar el titulo
+    familias de la fuente
+*/
+#section3_id div h2{
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+/*titulos f3 de la seccion3: 
+    centrar el titulo
+*/
+#section3_id h3{
+    text-align: center
+}
+/*divs de la seccion 3
+    tamanyo maximo 800 px
+    centrar contenido
+    recortar esquinas
+    padding para separar del borde de abajo
+*/
+#section3_id div{
+    max-width: 800px;
+    justify-self: center;
+    border-radius: 10px;   
+    padding-bottom: 10px;
+}
+/*hover de la seccion de noticias: 
+    animacion de color de fondo 6 segundos lineal
+*/
+#section3_id div:hover{
+    animation: colorDeFondo02 6s forwards;
+}
+/*parrafos de la seccion de noticias
+    anchura del parrafo 97% (el margin de la imagen saca el texto fuera del container)
+    tamanyo fuente 103% para compensar el cambio de anchura del parrafo
+    pading para separar de los bordes
+*/
+.news_p_class_01{
+    width: 97%;
+    font-size: 103%;
+    padding-top: 10px; 
+    padding-left:15px;
+}
+/*
+________________________________________________________________________
+________________________________________________________________________
+Productos
+________________________________________________________________________
+________________________________________________________________________
+*/
+/*titulo h2 de la seccion del NAV
+    agrandar el tamanyo para diferenciar del h3
+    margin 5px auto para centrar y separar 5 px de arriba y abajo
+*/
+#productos_nav_id h2{
+    font-size: 42px;
+    margin: 5px auto;
+}
+/*titulos de categorias de productos (h3)
+    display: flex para habilitar el flex para poder jugar con la posicion y el tamanyo
+    justify self center para centrar los titulos
+    color de fondo con gradiente circular de dos colores
+    padding para separar los bordes
+    border radius para recortar las esquinas
+    cambiar el tamanyo de la fuente
+    familia de la fuente helvetica o sans-serif
+    color de las letras
+    animacion del borde 16 segundos ciclica
+*/
+.product_title_class{
+    display: flex;
+    justify-self: center;
+    background: radial-gradient(circle,#B3EEFF,#B7f2FF);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 30px;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+    color: #5891a1;
+    animation: colorDeBorde 16s infinite alternate;
+}
+/*tablas de productos
+    anchura maxima 800 pixeles para cuando el navegador ocupe toda la pantalla
+    ocupar el 100% por debajo de los 800 pixeles
+    recortar esquinas
+    margin: centrar la tabla
+    color de fondo de las tablas
+*/
+.product_table_class{
+    max-width: 800px;
+    width:100%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #B3EEFF;
+    
+}
+/*celdas de las tablas de productos: centrar los elementos(imagenes y texto)
+    recortar esquinas
+*/
+.product_table_class tr td{
+    text-align: center;
+    border-radius: 10px;
+}
+/*hover de la tabla: animacion de color de fondo*/
+.product_table_class:hover{
+    animation: colorDeFondo04 6s forwards;
+}
+/*hover de las filas (tr) de las tablas de productos: animacion de color de fondo*/
+.product_table_class tr:hover{
+    animation: colorDeFondo02 6s forwards;
+}
+/*hover de las celdas de las tablas: animacion de color de fondo*/
+.product_table_class tr td:hover{
+    animation: colorDeFondo06 6s infinite alternate;
+}
+/*imagenes de las tablas de productos (caracteristicas han sido elegidas por la animacion del hover)
+    anchura 90% 
+    altura automatica para mantener el ratio de la imagen
+    padding 20% y 30% arriba y abajo no cambiara el tamanyo de la celda al agrandar la imagen
+    transicion de 1 segundo para suavizar la animacion
+*/
+.product_table_class tr td img{
+    width: 90%;
+    height: auto;
+    padding-top: 20%;
+    padding-bottom: 30%;
+    transition: filter 1s ease;
+}
+/*hover de las imagenes de las tablas de productos{
+    agrandar al tamanyo 100% (heigh es auto asi que no hay que cambiarlo)
+    quitar el padding
+    aumentar la exposicion 180%
+    aumentar el contraste 190%
+*/
+.product_table_class tr td img:hover{
+    width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    filter: brightness(1.8);
+    filter: contrast(1.9);
+}
+/*
+primera tabla: td anchura 33% ya que hay tres elementos por fila
+*/
+#product_table_id_01 tr td{
+    width: 33%;
+}
+/*
+segunda tabla: td anchura 25% ya que hay cuatro elementos por fila
+*/
+#product_table_id_02 tr td{
+    width: 25%;
+}
+/*
+tercera tabla: td anchura 20% ya que hay cinco elementos por fila
+*/
+#product_table_id_03 tr td{
+    width: 20%;
+}
+/*cuarta tabla: td anchura 33% ya que hay tres elementos por fila*/
+#product_table_id_04 tr td{
+    width: 33%;
+}
+/*parrafos de nombre de producto
+    fmilias de la fuente
+    tamanyo de la fuente mas grande
+    display flex para que floten en la celda
+    justify-content para centrar los parrafos
+*/
+.p_name_class{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+/*parrafos de descripcion de producto
+    cambiar fuente
+    cambiar tamanyo fuente
+    padding left y right para separar de los bordes laterales
+*/
+.p_description_class{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*parrafos de precio de producto
+    cambiar fuente
+    padding left y right para cuando el precio contiene un texto mas ancho que la celda
+*/
+.p_price_class{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*
+________________________________________________________________________
+________________________________________________________________________
+Presupuestos
+________________________________________________________________________
+________________________________________________________________________
+*/
+/*parrafos dentro de divs dentro de la seccion1: 
+    margen a la izquierda para separarlos del borde
+*/
+.section1_class div p{
+    margin-left: 15px;
+}
+/*seccion 1: recortar esquinas*/
+.section1_class{
+    border-radius: 10px;
+}
+/*elementos dentro del formulario: separar del borde izquierdo*/
+.section1_class form label,input,button{
+    margin-left: 15px;
+}
+/*formulario de la seccion 1: recortar esquinas*/
+.section1_class form{
+    border-radius: 10px;
+}
+/* boton de enviar: separar del borde de abajo*/
+button{
+    margin-bottom: 15px;
+}
+/*
+________________________________________________________________________
+________________________________________________________________________
+CONTACTO
+________________________________________________________________________
+________________________________________________________________________
+*/
+/*
+parrafos de la tabla de la seccion 1
+*/
+.section1_class table tr td p{
+    padding-left: 15px;
+}

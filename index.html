@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--idioma de la pagina-->
+<html lang="es">
+<head>
+    <!--codificacion de los caracteres-->
+    <meta charset="UTF-8">
+    <!--meta viewport para que el navegador cargue la web desde diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion de la pagina web-->
+    <meta name="description" content="Empresa de Electronica y Robotica">
+    <!--palabras clave para el buscador-->
+    <meta name="keywords" content="Keyday, Electronics, keydayelectronics, Electronica, Robotica, Robotics">
+    <!--autor de la pagina-->
+    <meta name="author" content="Francesc">
+    <!--permite a los moteres indexar la pagina-->
+    <meta name="robots" content="index, follow">
+    <!--enlace al archivo de estilo en la carpeta /css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--enlace al icono de la ventana del navegador-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--titulo de la pagina-->
+    <title>Keyday Electronics</title>
+</head>
+<!--body class home para que el css sepa la pagina en la que se encuentra actualmente-->
+<body class="home">
+    <!--seccion header-->
+    <header>
+        <div>
+          <!--tabla que contiene enlaces en celda (funciona como menu de navegacion)-->
+          <table class="menu_table_class">
+            <tr>
+                <!--td que contiene la imagen del logo class home para cambiar de fondo-->
+                <td class="menu-home">
+                    <a href="index.html">
+                        <img id="logo_img_id" src="images/keyday01.png" alt="logo img failed">
+                    </a>
+                </td>
+                <!--td que contiene el enlace a productos.html class productos para cambiar de fondo-->
+                <td  class="menu-productos">
+                    <a href="views/productos.html" class="menu_a">
+                        <p class="menu_p">
+                            Productos
+                        </p>
+                    </a>
+                </td>
+                <!--td que contiene el enlace a presupuestos.html class presupuestos para cambiar de fondo-->
+                <td  class="menu-presupuestos">
+                    <a href="views/presupuestos.html" class="menu_a">
+                        <p class="menu_p">
+                            Presupuestos
+                        </p>
+                    </a>
+                </td>
+                <!--td que contiene el enlace a contacto.html class contacto para cambiar de fondo-->
+                <td class="menu-contacto">
+                    <a href="views/contacto.html" class="menu_a">
+                        <p class="menu_p">
+                            Contacto
+                        </p>
+                    </a>
+                </td>
+            </tr>
+           </table>
+        </div>
+    </header>
+    <!--nav que contiene dos parrafos informativos-->
+    <nav>
+        <p><b>Keyday electronics</b>&reg; es una empresa que dedicada al desarrollo de tecnolog&iacute;as rob&oacute;ticas.</p>
+        <p><b>Keyday electronics</b>&reg; ofrece una amplia gama de servicios a su disposici&oacute;n, entre los que destacan: venta de dise&ntilde;os 3d, ensamblamiento y reparaci&oacute;n de componentes electr&oacute;nicos y rob&oacute;ticos, impresi&oacute;n de placas base customizadas y venta de componentes electr&oacute;nicos de alta calidad.</p>       
+    </nav>
+    <!--seccion 1-->
+    <section id="section1">
+        <!--tabla que contiene 3 filas, pero la imagen de la segunda fila ocupa 2 filas-->
+        <table class="section1_table_class">
+            <!--esta fila contiene una lista y la imagen que ocupa 2 filas-->
+            <tr>
+                <!--esta celda contiene un titulo h2 y la lista-->
+                <td>
+                    <h2>Nuestros Productos</h2>
+                     <ul class="ul_class_01">
+                        <li>Robots asistentes: gestione sus tareas dom&eacute;sticas con nuestros avanzados robots humanoides.</li>
+                        <li>Impresoras 3D: alto rendimiento para todas sus necesidades de producci&oacute;n y prototipado.</li>
+                        <li>Accesorios para Raspberri Pi: Expanda sus proyectos con nuestro amplio cat&aacute;logo de componentes.</li>
+                        <li>Microchips ESP32: Compare precios y caracter&iacute;sticas de los fabricantes m&aacute;s populares.</li>
+                        <li>Componentes rob&oacute;ticos: Elija los mejores componentes para sus proyectos</li>
+                        <li>Placas base y Kits Arduino: perfecto tanto para principiantes como para profesionales para construir, testear e innovar.</li>
+                    </ul>
+                </td>
+                <!--imagen dentro de una celda que ocupa 2 filas-->
+                <td id="robot_img_container_id" rowspan="2">
+                    <img id="robot_01_img_id" src="images/human_robot_11.png" alt="human robot img failed">
+                </td>
+            </tr>
+            <!--segunda fila contiene otra lista de la misma clase-->
+            <tr>
+                <!--esta celda contiene un titulo h2 y la lista-->
+                <td>
+                    <h2>Nuestros Servicios</h2>
+                    <ul class="ul_class_01">
+                        <li>Impresi&oacute;n 3D: desde prototipos hasta dise&ntilde;os comerciales, hacemos sus ideas realidad.</li>
+                        <li>Impresi&oacute;n de placas base: use nuestro software gratuito para dise&ntilde;ar sus placas base y nos encargaremos del resto.</li>
+                        <li>Reparaci&oacute;n y mantenimiento: Mano de obra experta para todos sus componentes electr&oacute;nicos y rob&oacute;ticos.</li>
+                    </ul>
+                </td>
+            </tr>
+            <!--tercera fila ocupa dos columnas contiene tres parrafos -->
+            <tr>
+                <td colspan="2">
+                    <p>
+                        Tecnolog&iacute;a y herramientas de vanguardia para alimentar su creatividad.
+                    </p>
+                    <p>
+                        Un compromiso de ofrecer productos y servicios de calidad adaptados a sus necesidades.
+                    </p>
+                    <p>
+                        Un equipo dedicado listo para guiarle en cada paso del camino.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!--seccion 2 contiene el titulo de la seccion 4 parrafos-->
+    <section id="section2">
+        <h2>
+            prueba
+        </h2>
+        <!--los parrafos son de la misma clase y contienen parte del texto en negrita-->
+        <p class="normal_p_class_01">
+            <b>&iquest;Por qu&eacute; elegir Keyday Electronics&reg;?</b><br> 
+            Innovando el futuro, impulsados por la excelencia. <br>
+            En Keyday Electronics&reg;, estamos comprometidos con proporcionar una calidad inigualable en cada producto y servicio que ofrecemos.
+            Somos la mejor elecci&oacute;n para los entusiastas de la rob&oacute;tica y la electr&oacute;nica.<br>
+        </p>
+        <p class="normal_p_class_01">
+            <b>Calidad insuperable de los materiales <br></b>
+            Creemos que las creaciones excepcionales comienzan con componentes excepcionales. Cada producto en Keyday Electronics est&aacute; fabricado con materiales de primera calidad que garantizan durabilidad, eficiencia y un rendimiento &oacute;ptimo. <br>
+        </p>
+        <p class="normal_p_class_01">
+            <b>A&ntilde;os de experiencia</b><br>
+            Con d&eacute;cadas de experiencia en la industria de la electr&oacute;nica y la rob&oacute;tica, nuestro historial habla por s&iacute; solo. Desde el dise&ntilde;o hasta la ejecuci&oacute;n, te ofrecemos soluciones confiables respaldadas por un amplio conocimiento. <br>
+        </p>
+        <p class="normal_p_class_01">
+            <b>Competencia en la que puedes confiar</b><br>
+            Nuestro equipo de profesionales capacitados est&aacute; apasionado por superar los l&iacute;mites de la innovaci&oacute;n. Combinando experiencia t&eacute;cnica con un enfoque centrado en el cliente, entregamos productos y servicios que superan las expectativas. <br>
+            Precisi&oacute;n impulsada por IA
+        </p>
+    </section>
+    <!--seccion 3/Noticias-->
+    <section id="section3_id">
+        <!--titulo permanente-->
+        <div>
+            <h2>Noticias</h2>
+        </div>
+        <!--titulo opcional-->
+        <h3>NOVEDAD: Robots de combate </h3>
+        <!--div que contiene la imagen de la noticia y el texto de la noticia dispuesto en 5 parrafos de la misma clase-->
+        <div>
+            <img src="images/toy_robot_01bw.png" id="toyrobot_img_id_01" alt="error en la imagen de robot juguete">
+            <p class="news_p_class_01">
+                <b>Robots Humanoides en Tama&ntilde;o Juguete</b> - &iexcl;Tu Imaginaci&oacute;n, Desatada! <br>
+                Sum&eacute;rgete en el fascinante mundo de la rob&oacute;tica con nuestros robots humanoides de tama&ntilde;o juguete, dise&ntilde;ados para entusiastas de todos los niveles. Estas creaciones de &uacute;ltima generaci&oacute;n traen el futuro a tus manos, fusionando diversi&oacute;n, innovaci&oacute;n y posibilidades ilimitadas.
+            </p>
+            <p class="news_p_class_01">
+                <b>Caracter&iacute;sticas:</b>
+                Robots Totalmente Ensamblados, listos para entrar en acci&oacute;n de inmediato, estos robots pueden seguir tus comandos de voz o responder a una variedad de controladores de juego (Xbox, PS4, universal). <br>
+            </p> 
+            <p class="news_p_class_01">
+                <b>Componentes Personalizables: </b>
+                &iquest;Prefieres construir tu propia obra maestra? Elige entre nuestra amplia colecci&oacute;n de piezas rob&oacute;ticas para dise&ntilde;ar y ensamblar el robot de tus sue&ntilde;os.
+            </p>   
+            <p class="news_p_class_01">
+                <b>Tecnolog&iacute;a Avanzada:</b> Equipados con lo &uacute;ltimo en rob&oacute;tica y electr&oacute;nica, estos robots combinan agilidad, precisi&oacute;n e inteligencia para una experiencia sin igual.
+            </p>
+            <p class="news_p_class_01">
+                <b>Por qu&eacute; te encantar&aacute;n:</b> Tanto si eres un constructor experimentado como si apenas est&aacute;s comenzando, nuestros robots humanoides ofrecen la combinaci&oacute;n perfecta de accesibilidad y complejidad para inspirar tu creatividad. Contr&oacute;lalos con facilidad, presume de tu destreza en ingenier&iacute;a o incluso enfr&eacute;ntalos en una &eacute;pica competencia. <br>
+                &iexcl;Explora, crea y domina el futuro con estos incre&iacute;bles robots!
+            </p>
+        </div>
+    </section>
+  <!--seccion footer-->  
+  <footer id="footer_id">
+    <!--tabla de tres filas que contienen el contenido de footer-->
+    <table id="footer_table_id">
+        <!--fila de las 5 imagenes dentro de enlaces de las redes sociales en una sola celda-->
+        <tr>
+                <td class="social_td_class">
+                    <a href="https://www.facebook.com"><img class="social_img_class_00" src="images/facebooklogo.webp" alt="facebook logo not loaded"></a>
+                    <a href="https://x.com"><img class="social_img_class_00" src="images/xlogo.png" alt="x logo not working"></a>
+                    <a href="https://www.linkedin.com"><img class="social_img_class_00" src="images/inlogo.png" alt="linkedin logo not working"></a>
+                    <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00" src="images/instalogo.png " alt="instagram logo not working"></a>
+                    <a href="https://www.youtube.com"><img class="social_img_class_00" src="images/ytlogo.png" alt="youtube logo not working" style="margin-bottom: 5px;"></a>
+                </td>
+        </tr>
+        <!--fila que contiene la direccion de la empresa-->
+        <tr>
+            <td>
+                <p >
+                    Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
+                </p>
+            </td>
+        </tr>
+        <!--fila que contiene el eviso legal-->
+        <tr>
+            <td>
+                <p>
+                    Lea nuestro <a href="views/aviso_legal.html" target="_blank">Aviso Legal</a>
+                </p>
+            </td>
+        </tr> 
+    </table>
+  </footer>
+</body>
+</html>
